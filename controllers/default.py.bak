@@ -17,7 +17,6 @@ def index():
 
 def pageContact():
     rowsContact=db().select(db.personnel.ALL,distinct=True)
-    return locals()
 
 def statutJuridique():
     """

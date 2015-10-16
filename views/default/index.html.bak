@@ -32,7 +32,7 @@
     <li class="list-group-item">{{=A(T("Notre personnel"), _href=URL('default','index'))}}</li>
     <li class="list-group-item">{{=A(T("Parc informatique"), _href=URL('default','index'))}}</li>
     <li class="list-group-item">{{=A(T("Satut juridique"), _href=URL('default','statutJuridique'))}}</li>
-    <li class="list-group-item">{{=A(T("Contact"), _href=URL('default','pageContact'))}}</li>
+    <li class="list-group-item">{{=A(T("Contact"), _href=URL('default','index'))}}</li>
 
   </ul>
 </div>

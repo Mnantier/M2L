@@ -298,3 +298,15 @@ CREATE TABLE auth_user(
     registration_id VARCHAR(512),
     PRIMARY KEY (id)
 ) ENGINE=InnoDB CHARACTER SET utf8;
+timestamp: 2015-10-16T15:27:14.552000
+CREATE TABLE personnel(
+    id INT AUTO_INCREMENT NOT NULL,
+    nom VARCHAR(512),
+    prenom VARCHAR(512),
+    mission VARCHAR(512),
+    adresseRue VARCHAR(512),
+    tel VARCHAR(512),
+    emailContact VARCHAR(512),
+    PRIMARY KEY (id)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
