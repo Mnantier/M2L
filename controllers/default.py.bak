@@ -22,13 +22,6 @@ def statutJuridique():
     """
     return locals()
 
-def servicePropose():
-    """
-    Page des services
-    """
-    return locals()
-    
-
 def user():
     """
     exposes:
