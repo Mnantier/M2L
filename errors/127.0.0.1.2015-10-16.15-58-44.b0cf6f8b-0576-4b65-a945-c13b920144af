@@ -1,0 +1,836 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.AttributeError'> 'dict' object has no attribute 'entries'"
+p3
+sS'layer'
+p4
+S'C:\\Users\\Matthias\\Desktop\\web2py\\applications\\M2L\\views\\default/espacePresse.html'
+p5
+sS'code'
+p6
+S'response.write(\'<!DOCTYPE html>\\n<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="\', escape=False)\nresponse.write(T.accepted_language or \'en\')\nresponse.write(\'"> <!--<![endif]-->\\n  <head>\\n    <meta charset="utf-8">\\n    <!-- www.phpied.com/conditional-comments-block-downloads/ -->\\n    <!-- Always force latest IE rendering engine\\n         (even in intranet) & Chrome Frame\\n         Remove this if you use the .htaccess -->\\n    <meta http-equiv="X-UA-Compatible" content="IE=edge\', escape=False)\nresponse.write(not request.is_local and \',chrome=1\' or \'\')\nresponse.write(\'">\\n    <!--  Mobile Viewport Fix\\n          j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag\\n          device-width: Occupy full width of the screen in its current orientation\\n          initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height\\n          user-scalable = yes allows the user to zoom in -->\\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\\n    <title>\', escape=False)\nresponse.write(response.title or request.application)\nresponse.write(\'</title>\\n    <!-- http://dev.w3.org/html5/markup/meta.name.html -->\\n    <meta name="application-name" content="\', escape=False)\nresponse.write(request.application)\nresponse.write(\'">\\n    <!-- Speaking of Google, don\\\'t forget to set your site up:\\n         http://google.com/webmasters -->\\n    <meta name="google-site-verification" content="">\\n    <!-- include stylesheets -->\\n    <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'css/bootstrap.min.css\'))\nresponse.write(\'"/>\\n    <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'css/bootstrap-theme.min.css\'))\nresponse.write(\'"/>\\n    <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'css/web2py-bootstrap3.css\'))\nresponse.write(\'"/>\\n    <link rel="shortcut icon" href="\', escape=False)\nresponse.write(URL(\'static\',\'images/favicon.ico\'))\nresponse.write(\'" type="image/x-icon">\\n    <link rel="apple-touch-icon" href="\', escape=False)\nresponse.write(URL(\'static\',\'images/favicon.png\'))\nresponse.write(\'">\\n    <!-- All JavaScript at the bottom, except for Modernizr which enables\\n         HTML5 elements & feature detects -->\\n    <script src="\', escape=False)\nresponse.write(URL(\'static\',\'js/modernizr-2.8.3.min.js\'))\nresponse.write(\'"></script>\\n    <!--[if lt IE 9]>\\n        <script src="\', escape=False)\nresponse.write(URL(\'static\',\'js/respond-1.4.2.min.js\'))\nresponse.write(\'"></script>\\n        <![endif]-->\\n    <!-- Favicons -->\\n    \', escape=False)\nresponse.write(\'<script type="text/javascript"><!--\\n    // These variables are used by the web2py_ajax_init function in web2py_ajax.js (which is loaded below).\\n    var w2p_ajax_confirm_message = "\', escape=False)\nresponse.write(T(\'Are you sure you want to delete this object?\'))\nresponse.write(\'";\\n    var w2p_ajax_disable_with_message = "\', escape=False)\nresponse.write(T(\'Working...\'))\nresponse.write(\'";\\n    var w2p_ajax_date_format = "\', escape=False)\nresponse.write(T(\'%Y-%m-%d\'))\nresponse.write(\'";\\n    var w2p_ajax_datetime_format = "\', escape=False)\nresponse.write(T(\'%Y-%m-%d %H:%M:%S\'))\nresponse.write(\'";\\n    var ajax_error_500 = \\\'\', escape=False)\nresponse.write(T.M(\'An error occured, please [[reload %s]] the page\') % URL(args=request.args, vars=request.get_vars))\nresponse.write("\'\\n    //--></script>\\n", escape=False)\nresponse.files.insert(0,URL(\'static\',\'js/jquery.js\'))\nresponse.files.insert(1,URL(\'static\',\'css/calendar.css\'))\nresponse.files.insert(2,URL(\'static\',\'js/calendar.js\'))\nresponse.files.insert(3,URL(\'static\',\'js/web2py.js\'))\nresponse.include_meta()\nresponse.include_files()\nresponse.write(\'\\n\', escape=False)\nresponse.write(\' <!-- this includes jquery.js, calendar.js/.css and web2py.js -->\\n    \', escape=False)\nresponse.write(\'\\n    \', escape=False)\n# using sidebars need to know what sidebar you want to use\nmc0 = \'col-md-12\'\nmc1 = \'col-md-9\'\nmc2 = \'col-md-6\'\nleft_sidebar_enabled = globals().get(\'left_sidebar_enabled\', False)\nright_sidebar_enabled = globals().get(\'right_sidebar_enabled\', False)\nmiddle_column = {0: mc0, 1: mc1, 2: mc2}[\n(left_sidebar_enabled and 1 or 0)+(right_sidebar_enabled and 1 or 0)]\nresponse.write(\'\\n  </head>\\n  <body>\\n    <!--[if lt IE 8]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->\\n    <div class="flash alert alert-dismissable">\', escape=False)\nresponse.write(response.flash or \'\')\nresponse.write(\'</div>\\n    <!-- Navbar ======================================= -->\\n    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">\\n      <div class="container-fluid">\\n        <div class="navbar-header">\\n          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">\\n            <span class="sr-only">Toggle navigation</span>\\n            <span class="icon-bar"></span>\\n            <span class="icon-bar"></span>\\n            <span class="icon-bar"></span>\\n          </button>\\n          \', escape=False)\nresponse.write(response.logo or \'\')\nresponse.write(\'\\n        </div>\\n        <div class="collapse navbar-collapse navbar-ex1-collapse">\\n          <ul class="nav navbar-nav navbar-right">\\n            \', escape=False)\nresponse.write(\'auth\' in globals() and auth.navbar(\'Welcome\',mode=\'dropdown\') or \'\')\nresponse.write(\'\\n          </ul>\\n          \', escape=False)\nif response.menu:\n    response.write(\'\\n          \', escape=False)\n    response.write(MENU(response.menu, _class=\'nav navbar-nav\',li_class=\'dropdown\',ul_class=\'dropdown-menu\'))\n    response.write(\'\\n          \', escape=False)\n    pass\nresponse.write(\'\\n        </div>\\n      </div>\\n    </nav>\\n    <!-- Masthead ===================================== -->    \\n    \', escape=False)\nresponse.write(\'\\n    <header class="container-fluid background">\\n      <div class="jumbotron text-center">\\n        \', escape=False)\nif response.title:\n    response.write(\'\\n        <h1>\', escape=False)\n    response.write(response.title)\n    response.write(\'\\n          <small>\', escape=False)\n    response.write(response.subtitle or \'\')\n    response.write(\'</small></h1>\\n        \', escape=False)\n    pass\nresponse.write(\'\\n      </div>\\n    </header>\\n\', escape=False)\nresponse.write(\'\\n    <!-- Main ========================================= -->\\n    <!-- Begin page content -->\\n    <div class="container-fluid main-container">\\n      \', escape=False)\nif left_sidebar_enabled:\n    response.write(\'\\n        <div class="col-md-3 left-sidebar">\\n            \', escape=False)\n    response.write(\'\\n            <h3>Left Sidebar</h3>\\n            <p></p>\\n            \', escape=False)\n    response.write(\'\\n        </div>\\n      \', escape=False)\n    pass\nresponse.write(\'\\n\\n      <div class="\', escape=False)\nresponse.write(middle_column)\nresponse.write(\'">\\n        \', escape=False)\nresponse.write(\'\\n        \', escape=False)\nresponse.write(\'\\r\\n<table class="table">\\r\\n   \', escape=False)\nfor entry in  rssVosges.entries:\n    response.write(\'\\r\\n    <tr>\\r\\n        <td>\', escape=False)\n    response.write(entry.title)\n    response.write(\'</td>\\r\\n        <td>\', escape=False)\n    response.write(entry.created_on)\n    response.write(\'</td>\\r\\n    </tr>\\r\\n    \', escape=False)\n    pass\nresponse.write(\'\\r\\n</table>\\r\\n\', escape=False)\nresponse.write(\'\\n        \', escape=False)\nresponse.write(\'\\n      </div>\\n\\n      \', escape=False)\nif right_sidebar_enabled:\n    response.write(\'\\n        <div class="col-md-3">\\n            \', escape=False)\n    response.write(\'\\n            <h3>Right Sidebar</h3>\\n            <p></p>\\n            \', escape=False)\n    response.write(\'\\n        </div>\\n      \', escape=False)\n    pass\nresponse.write(\'\\n\\n    </div>\\n\\n    \', escape=False)\nresponse.write(\' <!-- this is default footer -->      \\n    <footer class="footer">\\n      <div class="container-fluid">\\n        <div class="copyright pull-left">\', escape=False)\nresponse.write(T(\'Copyright\'))\nresponse.write(\' &#169; \', escape=False)\nresponse.write(request.now.year)\nresponse.write(\'</div>\\n          <div id="poweredBy" class="pull-right">\\n            \', escape=False)\nresponse.write(T(\'Powered by\'))\nresponse.write(\'\\n            <a href="http://www.web2py.com/">web2py</a>\\n          </div>\\n      </div>\\n    </footer>\\n    \', escape=False)\nresponse.write(\'\\n    <!-- The javascript =============================== -->\\n    <script src="\', escape=False)\nresponse.write(URL(\'static\',\'js/bootstrap.min.js\'))\nresponse.write(\'"></script>\\n    <script src="\', escape=False)\nresponse.write(URL(\'static\',\'js/web2py-bootstrap3.js\'))\nresponse.write(\'"></script>\\n    \', escape=False)\nresponse.write(\'\\n    \', escape=False)\nif response.google_analytics_id:\n    response.write(\'\\n    <!-- Analytics ==================================== -->\\n    <script src="\', escape=False)\n    response.write(URL(\'static\',\'js/analytics.min.js\'))\n    response.write(\'"></script>\\n    <script type="text/javascript">\\n      analytics.initialize({\\n      \\\'Google Analytics\\\':{trackingId:\\\'\', escape=False)\n    response.write(response.google_analytics_id)\n    response.write("\'}\\n      });\\n    </script>\\n    ", escape=False)\n    pass\nresponse.write(\'\\n    <!-- Share ============================y============ -->\\n    <script src="\', escape=False)\nresponse.write(URL(\'static\',\'js/share.js\',vars=dict(static=URL(\'static\',\'images\'))))\nresponse.write(\'"></script>\\n  </body>\\n</html>\\n\', escape=False)'
+p7
+sS'snapshot'
+p8
+(dp9
+S'exception'
+p10
+(dp11
+S'__hash__'
+p12
+S"<method-wrapper '__hash__' of exceptions.AttributeError object>"
+p13
+sS'__setattr__'
+p14
+S"<method-wrapper '__setattr__' of exceptions.AttributeError object>"
+p15
+sS'__reduce_ex__'
+p16
+S'<built-in method __reduce_ex__ of exceptions.AttributeError object>'
+p17
+sS'__getslice__'
+p18
+S"<method-wrapper '__getslice__' of exceptions.AttributeError object>"
+p19
+sS'__getitem__'
+p20
+S"<method-wrapper '__getitem__' of exceptions.AttributeError object>"
+p21
+sS'__setstate__'
+p22
+S'<built-in method __setstate__ of exceptions.AttributeError object>'
+p23
+sS'__reduce__'
+p24
+S'<built-in method __reduce__ of exceptions.AttributeError object>'
+p25
+sS'__str__'
+p26
+S"<method-wrapper '__str__' of exceptions.AttributeError object>"
+p27
+sS'__format__'
+p28
+S'<built-in method __format__ of exceptions.AttributeError object>'
+p29
+sS'__getattribute__'
+p30
+S"<method-wrapper '__getattribute__' of exceptions.AttributeError object>"
+p31
+sS'__class__'
+p32
+S"<type 'exceptions.AttributeError'>"
+p33
+sS'__unicode__'
+p34
+S'<built-in method __unicode__ of exceptions.AttributeError object>'
+p35
+sS'__delattr__'
+p36
+S"<method-wrapper '__delattr__' of exceptions.AttributeError object>"
+p37
+sS'__subclasshook__'
+p38
+S'<built-in method __subclasshook__ of type object>'
+p39
+sS'__repr__'
+p40
+S"<method-wrapper '__repr__' of exceptions.AttributeError object>"
+p41
+sS'args'
+p42
+S'("\'dict\' object has no attribute \'entries\'",)'
+p43
+sS'__dict__'
+p44
+S'{}'
+p45
+sS'__sizeof__'
+p46
+S'<built-in method __sizeof__ of exceptions.AttributeError object>'
+p47
+sS'__doc__'
+p48
+S"'Attribute not found.'"
+p49
+sS'__init__'
+p50
+S"<method-wrapper '__init__' of exceptions.AttributeError object>"
+p51
+sS'__new__'
+p52
+S'<built-in method __new__ of type object>'
+p53
+ssS'evalue'
+p54
+S"'dict' object has no attribute 'entries'"
+p55
+sS'request'
+p56
+cgluon.html
+XML_unpickle
+p57
+(S's\xb4]\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">ajax</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">application</td><td style="vertical-align:top;">:</td><td><div>M2L</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cid</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">controller</td><td style="vertical-align:top;">:</td><td><div>default</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_admin</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-cc1088bc-c93d-48cd-8780-3357dc3d8e27<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_appcovoiturage</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-43a220aa-c144-414d-99c6-da3ca1dd3179<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_m2l</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-d558ff88-4bf4-4685-9889-c43f656a4bd2<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">env</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT</td><td style="vertical-align:top;">:</td><td><div>text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_ENCODING</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate, sdch</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_LANGUAGE</td><td style="vertical-align:top;">:</td><td><div>en-US,en;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_CACHE_CONTROL</td><td style="vertical-align:top;">:</td><td><div>max-age=0</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_CONNECTION</td><td style="vertical-align:top;">:</td><td><div>keep-alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_COOKIE</td><td style="vertical-align:top;">:</td><td><div>session_id_appcovoiturage=127.0.0.1-43a220aa-c144-414d-99c6-da3ca1dd3179; session_id_admin=127.0.0.1-cc1088bc-c93d-48cd-8780-3357dc3d8e27; session_id_m2l=127.0.0.1-d558ff88-4bf4-4685-9889-c43f656a4bd2</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_HOST</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_USER_AGENT</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">PATH_INFO</td><td style="vertical-align:top;">:</td><td><div>/M2L/default/espacePresse</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">QUERY_STRING</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_ADDR</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_PORT</td><td style="vertical-align:top;">:</td><td><div>17148</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REQUEST_METHOD</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SCRIPT_NAME</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_NAME</td><td style="vertical-align:top;">:</td><td><div>ACER</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PORT</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PROTOCOL</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_SOFTWARE</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;C:\\\\Users\\\\Matthias\\\\Desktop\\\\web2py\\\\applications\\\\M2L\\\\&#x27;, &#x27;C:\\\\Users\\\\Matthias\\\\Desktop\\\\web2py\\\\applications\\\\admin\\\\&#x27;, &#x27;C:\\\\Users\\\\Matthias\\\\Desktop\\\\web2py\\\\applications\\\\appcovoiturage\\\\&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\Matthias\\Desktop\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x2a69698: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;ips&#x27;: [&#x27;2620:9b::197f:12d1&#x27;, &#x27;25.127.18.209&#x27;, &#x27;fe80::6dd7:5b46:1e6a:ba12%2&#x27;, &#x27;172.16.4.105&#x27;, &#x27;fe80::51af:52a4:fa4e:7e2%12&#x27;], &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;scheduler_groups&#x27;: None, &#x27;port&#x27;: 8000, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;ACER&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;print_errors&#x27;: False, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;C:\\\\Users\\\\Matthias\\\\Desktop\\\\web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;gae&#x27;: None, &#x27;password&#x27;: &#x27;&lt;ask&gt;&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\Matthias\\Desktop\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept</td><td style="vertical-align:top;">:</td><td><div>text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_encoding</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate, sdch</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_language</td><td style="vertical-align:top;">:</td><td><div>en-US,en;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_cache_control</td><td style="vertical-align:top;">:</td><td><div>max-age=0</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_connection</td><td style="vertical-align:top;">:</td><td><div>keep-alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_cookie</td><td style="vertical-align:top;">:</td><td><div>session_id_appcovoiturage=127.0.0.1-43a220aa-c144-414d-99c6-da3ca1dd3179; session_id_admin=127.0.0.1-cc1088bc-c93d-48cd-8780-3357dc3d8e27; session_id_m2l=127.0.0.1-d558ff88-4bf4-4685-9889-c43f656a4bd2</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_host</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_user_agent</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>172.16.4.105</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>fe80::51af:52a4:fa4e:7e2%12</div></td></tr><tr><td><div>2620:9b::197f:12d1</div></td></tr><tr><td><div>25.127.18.209</div></td></tr><tr><td><div>ACER</div></td></tr><tr><td><div>fe80::6dd7:5b46:1e6a:ba12%2</div></td></tr><tr><td><div>127.0.0.1</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path_info</td><td style="vertical-align:top;">:</td><td><div>/M2L/default/espacePresse</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">query_string</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_addr</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_port</td><td style="vertical-align:top;">:</td><td><div>17148</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_method</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_uri</td><td style="vertical-align:top;">:</td><td><div>/M2L/default/espacePresse</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">script_name</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_name</td><td style="vertical-align:top;">:</td><td><div>ACER</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_port</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_protocol</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_software</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_path</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\Matthias\\Desktop\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.12.3-stable+timestamp.2015.08.19.00.18.03</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x01C8D0D0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x02CDDAB0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x03B687B0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x01C8D0D0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x02CDDAB0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x03B687B0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">extension</td><td style="vertical-align:top;">:</td><td><div>html</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">folder</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\Matthias\\Desktop\\web2py\\applications\\M2L\\</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">function</td><td style="vertical-align:top;">:</td><td><div>espacePresse</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">global_settings</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;C:\\\\Users\\\\Matthias\\\\Desktop\\\\web2py\\\\applications\\\\M2L\\\\&#x27;, &#x27;C:\\\\Users\\\\Matthias\\\\Desktop\\\\web2py\\\\applications\\\\admin\\\\&#x27;, &#x27;C:\\\\Users\\\\Matthias\\\\Desktop\\\\web2py\\\\applications\\\\appcovoiturage\\\\&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\Matthias\\Desktop\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x2a69698: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;ips&#x27;: [&#x27;2620:9b::197f:12d1&#x27;, &#x27;25.127.18.209&#x27;, &#x27;fe80::6dd7:5b46:1e6a:ba12%2&#x27;, &#x27;172.16.4.105&#x27;, &#x27;fe80::51af:52a4:fa4e:7e2%12&#x27;], &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;scheduler_groups&#x27;: None, &#x27;port&#x27;: 8000, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;ACER&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;print_errors&#x27;: False, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;C:\\\\Users\\\\Matthias\\\\Desktop\\\\web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;gae&#x27;: None, &#x27;password&#x27;: &#x27;&lt;ask&gt;&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\Matthias\\Desktop\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>172.16.4.105</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>fe80::51af:52a4:fa4e:7e2%12</div></td></tr><tr><td><div>2620:9b::197f:12d1</div></td></tr><tr><td><div>25.127.18.209</div></td></tr><tr><td><div>ACER</div></td></tr><tr><td><div>fe80::6dd7:5b46:1e6a:ba12%2</div></td></tr><tr><td><div>127.0.0.1</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.12.3-stable+timestamp.2015.08.19.00.18.03</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_https</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_local</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_restful</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_sheduler</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_shell</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">now</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2015, 10, 16, 15, 58, 44, 62000)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_args</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_extension</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">url</td><td style="vertical-align:top;">:</td><td><div>/M2L/default/espacePresse</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">utcnow</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2015, 10, 16, 13, 58, 44, 62000)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi</td><td style="vertical-align:top;">:</td><td><div>&lt;gluon.main.LazyWSGI object at 0x07AAF6F0&gt;</div></td></tr></table></div>'
+tRp58
+sS'frames'
+p59
+(lp60
+(dp61
+S'file'
+p62
+S'C:\\Users\\Matthias\\Desktop\\web2py\\gluon\\restricted.py'
+p63
+sS'dump'
+p64
+(dp65
+S'environment'
+p66
+S"{'A': <class 'gluon.html.A'>, 'ANY_OF': <class 'gluon.validators.ANY_OF'>, 'ASSIGNJS': <function ASSIGNJS>, 'AppConfig': <function AppConfig>, 'Auth': <class 'gluon.tools.Auth'>, 'B': <class 'gluon.html.B'>, 'BEAUTIFY': <class 'gluon.html.BEAUTIFY'>, 'BODY': <class 'gluon.html.BODY'>, 'BR': <class 'gluon.html.BR'>, 'BUTTON': <class 'gluon.html.BUTTON'>, ...}"
+p67
+sS'ccode'
+p68
+S'<code object <module> at 03BB4968, file "C:\\User...ons\\M2L\\views\\default/espacePresse.html", line 1>'
+p69
+ssS'lnum'
+p70
+I227
+sS'lines'
+p71
+(dp72
+I224
+S'            ccode = code'
+p73
+sI225
+S'        else:'
+p74
+sI226
+S'            ccode = compile2(code, layer)'
+p75
+sI227
+S'        exec ccode in environment'
+p76
+sI228
+S'    except HTTP:'
+p77
+sI229
+S'        raise'
+p78
+sI230
+S'    except RestrictedError:'
+p79
+sI231
+S'        # do not encapsulate (obfuscate) the original RestrictedError'
+p80
+sI222
+S'    try:'
+p81
+sI223
+S'        if isinstance(code, types.CodeType):'
+p82
+ssS'call'
+p83
+S'(code=\'response.write(\\\'<!DOCTYPE html>\\\\n<!--[if (gt IE ..."></script>\\\\n  </body>\\\\n</html>\\\\n\\\', escape=False)\', environment={\'A\': <class \'gluon.html.A\'>, \'ANY_OF\': <class \'gluon.validators.ANY_OF\'>, \'ASSIGNJS\': <function ASSIGNJS>, \'AppConfig\': <function AppConfig>, \'Auth\': <class \'gluon.tools.Auth\'>, \'B\': <class \'gluon.html.B\'>, \'BEAUTIFY\': <class \'gluon.html.BEAUTIFY\'>, \'BODY\': <class \'gluon.html.BODY\'>, \'BR\': <class \'gluon.html.BR\'>, \'BUTTON\': <class \'gluon.html.BUTTON\'>, ...}, layer=r\'C:\\Users\\Matthias\\Desktop\\web2py\\applications\\M2L\\views\\default/espacePresse.html\')'
+p84
+sS'func'
+p85
+S'restricted'
+p86
+sa(dp87
+g62
+S'C:\\Users\\Matthias\\Desktop\\web2py\\applications\\M2L\\views\\default\\espacePresse.html'
+p88
+sg64
+(dp89
+sg70
+I85
+sg71
+(dp90
+I76
+S'    response.write(\'\\n        <div class="col-md-3 left-sidebar">\\n            \', escape=False)'
+p91
+sI77
+S"    response.write('\\n            <h3>Left Sidebar</h3>\\n            <p></p>\\n            ', escape=False)"
+p92
+sI78
+S"    response.write('\\n        </div>\\n      ', escape=False)"
+p93
+sI79
+S'    pass'
+p94
+sI80
+S'response.write(\'\\n\\n      <div class="\', escape=False)'
+p95
+sI81
+S'response.write(middle_column)'
+p96
+sI82
+S'response.write(\'">\\n        \', escape=False)'
+p97
+sI83
+S"response.write('\\n        ', escape=False)"
+p98
+sI84
+S'response.write(\'\\r\\n<table class="table">\\r\\n   \', escape=False)'
+p99
+sI85
+S'for entry in  rssVosges.entries:'
+p100
+sI86
+S"    response.write('\\r\\n    <tr>\\r\\n        <td>', escape=False)"
+p101
+sI87
+S'    response.write(entry.title)'
+p102
+sI88
+S"    response.write('</td>\\r\\n        <td>', escape=False)"
+p103
+sI89
+S'    response.write(entry.created_on)'
+p104
+sI90
+S"    response.write('</td>\\r\\n    </tr>\\r\\n    ', escape=False)"
+p105
+sI91
+S'    pass'
+p106
+sI92
+S"response.write('\\r\\n</table>\\r\\n', escape=False)"
+p107
+sI93
+S"response.write('\\n        ', escape=False)"
+p108
+sI94
+S"response.write('\\n      </div>\\n\\n      ', escape=False)"
+p109
+sI95
+S'if right_sidebar_enabled:'
+p110
+ssg83
+S'()'
+p111
+sg85
+S'<module>'
+p112
+sasS'pyver'
+p113
+S'Python 2.7.9: C:\\Users\\Matthias\\Desktop\\web2py\\web2py.exe (prefix: C:\\Python27)'
+p114
+sS'session'
+p115
+g57
+(S's\x1a\x00\x00\x00<div><table></table></div>'
+tRp116
+sS'etype'
+p117
+S"<type 'exceptions.AttributeError'>"
+p118
+sS'date'
+p119
+S'Fri Oct 16 15:58:46 2015'
+p120
+sS'response'
+p121
+g57
+(S'sn \x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">body</td><td style="vertical-align:top;">:</td><td><div>&lt;cStringIO.StringO object at 0x07AAF540&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_m2l</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-c857c386-bce1-4b45-9c37-5e3d9fa077a7<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div>/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">delimiters</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>{{</div></td></tr><tr><td><div>}}</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">files</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>/M2L/static/js/jquery.js</div></td></tr><tr><td><div>/M2L/static/css/calendar.css</div></td></tr><tr><td><div>/M2L/static/js/calendar.js</div></td></tr><tr><td><div>/M2L/static/js/web2py.js</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">flash</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">form_label_separator</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">formstyle</td><td style="vertical-align:top;">:</td><td><div>bootstrap3_inline</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generic_patterns</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>*</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">google_analytics_id</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">headers</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">X-Powered-By</td><td style="vertical-align:top;">:</td><td><div>web2py</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">logo</td><td style="vertical-align:top;">:</td><td><div>M2L</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">menu</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div><table><tr><td><div>Home</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/M2L/default/index</div></td></tr><tr><td><div><table></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Nos ligues</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/M2L/default/index</div></td></tr><tr><td><div><table></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Actualit\xc3\xa9s sportives de la presse</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/M2L/default/index</div></td></tr><tr><td><div><table></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Offre d\'emploi</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/M2L/default/index</div></td></tr><tr><td><div><table></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Intranet</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/M2L/default/index</div></td></tr><tr><td><div><table></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">meta</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">author</td><td style="vertical-align:top;">:</td><td><div>Maelle Taurand</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">description</td><td style="vertical-align:top;">:</td><td><div>Portail de la maison des Ligues de Lorraine</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generator</td><td style="vertical-align:top;">:</td><td><div>Portail de la maison des Ligues de Lorraine</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">keywords</td><td style="vertical-align:top;">:</td><td><div>Ligues, Lorraine, Sport</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">models_to_run</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>^\\w+\\.py$</div></td></tr><tr><td><div>^default/\\w+\\.py$</div></td></tr><tr><td><div>^default/espacePresse/\\w+\\.py$</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">postprocessing</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_compression_level</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_expires</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_key</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_data_name</td><td style="vertical-align:top;">:</td><td><div>session_data_m2l</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_file</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_filename</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\Matthias\\Desktop\\web2py\\applications\\M2L\\sessions\\127.0.0.1-c857c386-bce1-4b45-9c37-5e3d9fa077a7</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_hash</td><td style="vertical-align:top;">:</td><td><div>c0762cbf4baf7f9af97c051e7fcb8083</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-c857c386-bce1-4b45-9c37-5e3d9fa077a7</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_name</td><td style="vertical-align:top;">:</td><td><div>session_id_m2l</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_masterapp</td><td style="vertical-align:top;">:</td><td><div>M2L</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_new</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_storage_type</td><td style="vertical-align:top;">:</td><td><div>file</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">status</td><td style="vertical-align:top;">:</td><td><div>200</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">subtitle</td><td style="vertical-align:top;">:</td><td><div>Maison des Ligues de Lorraine</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">title</td><td style="vertical-align:top;">:</td><td><div>M2L</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">view</td><td style="vertical-align:top;">:</td><td><div>default/espacePresse.html</div></td></tr></table></div>'
+tRp122
+sS'locals'
+p123
+(dp124
+S'Service'
+p125
+S"<class 'gluon.tools.Service'>"
+p126
+sS'OBJECT'
+p127
+S"<class 'gluon.html.OBJECT'>"
+p128
+sS'SQLDB'
+p129
+S"<class 'pydal.base.DAL'>"
+p130
+sg115
+S'<Storage {}>'
+p131
+sS'LINK'
+p132
+S"<class 'gluon.html.LINK'>"
+p133
+sS'BR'
+p134
+S"<class 'gluon.html.BR'>"
+p135
+sS'local_import'
+p136
+S'<function <lambda>>'
+p137
+sS'OPTGROUP'
+p138
+S"<class 'gluon.html.OPTGROUP'>"
+p139
+sS'__package__'
+p140
+S'None'
+p141
+sS'PRE'
+p142
+S"<class 'gluon.html.PRE'>"
+p143
+sS'IS_INT_IN_RANGE'
+p144
+S"<class 'gluon.validators.IS_INT_IN_RANGE'>"
+p145
+sS'left_sidebar_enabled'
+p146
+S'False'
+p147
+sS'IS_LOWER'
+p148
+S"<class 'gluon.validators.IS_LOWER'>"
+p149
+sS'IS_STRONG'
+p150
+S"<class 'gluon.validators.IS_STRONG'>"
+p151
+sS'cache'
+p152
+S'<gluon.cache.Cache object>'
+p153
+sS'IS_IN_DB'
+p154
+S"<class 'gluon.validators.IS_IN_DB'>"
+p155
+sS'rssVosges'
+p156
+S'{\'created_on\': datetime.datetime(2015, 10, 16, 15, 58, 44, 62000), \'description\': u\'http://www.vosgesmatin.fr/ - RSS\', \'entries\': [{\'created_on\': datetime.datetime(2015, 10, 16, 15, 58, 44, 62000), \'description\': u\'Parce que trop de visiteurs ignorent qu\\u2019E...rs du secteur se sont r\\xe9unis ce vendredi, ...\', \'link\': u\'http://www.vosgesmatin.fr/edition-d-epinal/201...-du-tourisme-veulent-changer-l-image-de-la-ville\', \'title\': u\'Epinal : les acteurs du tourisme veulent changer l\\u2019image de la ville\'}, {\'created_on\': datetime.datetime(2015, 10, 16, 15, 58, 44, 62000), \'description\': u\'Grand Est magazine est le premier magazine de ...le r\\xe9gion Alsace/ Champagne-Ardenne/Lorraine.\', \'link\': u\'http://www.vosgesmatin.fr/actualite/2015/10/16...zine-n-1-invitation-au-voyage-en-region-inconnue\', \'title\': u\'Grand Est magazine N\\xb01 : Invitation au voyage en r\\xe9gion inconnue\'}, {\'created_on\': datetime.datetime(2015, 10, 16, 15, 58, 44, 62000), \'description\': u\'Le jeune gar\\xe7on, victime de moqueries dans ...le familial. Une enqu\\xeate a \\xe9t\\xe9 ouverte.\', \'link\': u\'http://www.vosgesmatin.fr/faits-divers/2015/10/16/un-enfant-de-douze-ans-se-pend-pres-de-nancy\', \'title\': u\'Un enfant de douze ans se pend en Lorraine\'}, {\'created_on\': datetime.datetime(2015, 10, 16, 15, 58, 44, 62000), \'description\': u\'Sancey-le-Grand. C\\u2019est mercredi qu\\u2019A... debout, sans bouger, dans la prairie qui se ...\', \'link\': u\'http://www.vosgesmatin.fr/actualite/2015/10/16...bs)-la-jument-melisse-poignardee-dans-sa-prairie\', \'title\': u\'Sancey-le-Grand (Doubs) : la jument M\\xe9lisse poignard\\xe9e dans sa prairie\'}, {\'created_on\': datetime.datetime(2015, 10, 16, 15, 58, 44, 62000), \'description\': u\'La chaufferie de cog\\xe9n\\xe9ration \\xe0 bioma... y a quelques jours. Il reste juste quelques ...\', \'link\': u\'http://www.vosgesmatin.fr/edition-d-epinal/201...6/epinal-la-chaufferie-de-razimont-est-en-action\', \'title\': u\'Epinal : la chaufferie de Razimont est en action\'}, {\'created_on\': datetime.datetime(2015, 10, 16, 15, 58, 44, 62000), \'description\': u\'Il \\xe9tait 12 h 20 lorsque les propri\\xe9tair...2019un d\\xe9but d\\u2019incendie venait de se ...\', \'link\': u\'http://www.vosgesmatin.fr/edition-d-epinal/201...xiquee-par-les-fumees-d-un-incendie-a-deyvillers\', \'title\': u\'Vosges : une enfant l\\xe9g\\xe8rement intoxiqu\\...les fum\\xe9es d\\u2019un incendie \\xe0 Deyvillers\'}, {\'created_on\': datetime.datetime(2015, 10, 16, 15, 58, 44, 62000), \'description\': u\'\\xab No comment \\xbb. La phrase revient inlass...ement quand on tente d\\u2019en savoir un peu ...\', \'link\': u\'http://www.vosgesmatin.fr/edition-d-epinal/2015/10/16/vosges-quand-la-droite-doit-se-recentrer\', \'title\': u\'Quand la droite doit se recentrer\'}, {\'created_on\': datetime.datetime(2015, 10, 16, 15, 58, 44, 62000), \'description\': u\'Une neige fine est \\xe0 nouveau tomb\\xe9e sur ...nt mais cela suffit \\xe0 faire le bonheur de ...\', \'link\': u\'http://www.vosgesmatin.fr/edition-de-saint-die...er-et-la-neige-au-compte-gouttes-dans-les-vosges\', \'title\': u\'L\\u2019hiver et la neige arrivent au compte-gouttes dans les Vosges\'}, {\'created_on\': datetime.datetime(2015, 10, 16, 15, 58, 44, 62000), \'description\': u\'Daniel Bernardi a le moral dans les chaussette...t de voir ses espoirs d\\u2019un 3e proc\\xe8s ...\', \'link\': u\'http://www.vosgesmatin.fr/edition-d-epinal/201...-l-affaire-du-restaurant-spinalien-les-papeliers\', \'title\': u\'Vosges : la cour de cassation rejette le pourv...u restaurant spinalien \\xab Les Papeliers \\xbb :\'}, {\'created_on\': datetime.datetime(2015, 10, 16, 15, 58, 44, 62000), \'description\': u\'Animal nocturne, le blaireau est difficilement...e9lid\\xe9 est en constante augmentation. Les ...\', \'link\': u\'http://www.vosgesmatin.fr/edition-d-epinal/201...6/vosges-le-blaireau-dans-les-traces-du-sanglier\', \'title\': u\'Le blaireau dans les traces du sanglier\'}, {\'created_on\': datetime.datetime(2015, 10, 16, 15, 58, 44, 62000), \'description\': u\'L\\u2019immense usine situ\\xe9e \\xe0 Saint-Etie...ion de son rachat par le groupe Galil\\xe9 et ...\', \'link\': u\'http://www.vosgesmatin.fr/edition-de-remiremon...ange-de-patron-et-se-tourne-vers-l-international\', \'title\': u\'Vosges : l\\u2019entreprise MA Industrie de Sai...de patron et se tourne vers l\\u2019international\'}, {\'created_on\': datetime.datetime(2015, 10, 16, 15, 58, 44, 62000), \'description\': u\'ON NE REFAIT PAS L\\u2019HISTOIRE dit l\\u2019ad...algie. Avec un brin d\\u2019exactitude. Et un ...\', \'link\': u\'http://www.vosgesmatin.fr/loisirs/2015/10/16/l-exil-vosgien-de-napoleon\', \'title\': u\'L\\u2019exil vosgien de Napol\\xe9on\'}, {\'created_on\': datetime.datetime(2015, 10, 16, 15, 58, 44, 62000), \'description\': u\'Nouvelle imagerie mais surtout nouvelle image ...isition d\\u2019un scanner ultramoderne et un ...\', \'link\': u\'http://www.vosgesmatin.fr/sante-et-medecine/20...eau-se-dote-d-un-scanner-ultramoderne-de-750-000\', \'title\': u\'L\\u2019h\\xf4pital de Neufch\\xe2teau se dote d\\u2019un scanner ultramoderne de 750 000 \\u20ac\'}, {\'created_on\': datetime.datetime(2015, 10, 16, 15, 58, 44, 62000), \'description\': u\'Une jeune m\\xe8re de famille d\\u2019origine ma...riv\\xe9s \\xe0 Epinal lundi, en provenance de ...\', \'link\': u\'http://www.vosgesmatin.fr/societe/2015/10/16/e...-une-macedonienne-et-ses-enfants-dans-les-vosges\', \'title\': u\'Epinal : la France refuse l\\u2019accueil d\\u20...e Mac\\xe9donienne et ses enfants dans les Vosges\'}, {\'created_on\': datetime.datetime(2015, 10, 16, 15, 58, 44, 62000), \'description\': u\'Philippe Napp\\xe9, le patron des policiers d\\x...tr\\xe9 dans la s\\xe9curit\\xe9 publique comme ...\', \'link\': u\'http://www.vosgesmatin.fr/edition-de-saint-die...-commandant-de-police-philippe-nappe-un-bon-flic\', \'title\': u\'Saint-Di\\xe9 : d\\xe9part du commandant de police Philippe Napp\\xe9, \\xab un bon flic \\xbb\'}, {\'created_on\': datetime.datetime(2015, 10, 16, 15, 58, 44, 62000), \'description\': u\'Bar-le-Duc. Coup de tonnerre politique ce jeud...\\xe9partementaux du Front National de Meuse, ...\', \'link\': u\'http://www.vosgesmatin.fr/actualite/2015/10/15/meuse-election-annulee-pour-le-binome-fn\', \'title\': u\'Meuse : \\xe9lection annul\\xe9e pour le bin\\xf4me FN\'}, {\'created_on\': datetime.datetime(2015, 10, 16, 15, 58, 44, 62000), \'description\': u\'Amoindri par une douleur tenace au genou Derek...re indisponible pour six \\xe0 huit semaines. ...\', \'link\': u\'http://www.vosgesmatin.fr/sport/2015/10/15/sluc-nancy-raivio-va-mettre-le-clignotant\', \'title\': u\'SLUC Nancy : Raivio va mettre le clignotant\'}, {\'created_on\': datetime.datetime(2015, 10, 16, 15, 58, 44, 62000), \'description\': u\'Une randonneuse de 74 ans accompagn\\xe9e d\\u20...sur le sentier des Roches de Morteville \\xe0 ...\', \'link\': u\'http://www.vosgesmatin.fr/edition-de-remiremon...s-un-malaise-survenu-a-saint-maurice-sur-moselle\', \'title\': u\'Vosges : une septuag\\xe9naire h\\xe9litreuill\\x...n malaise survenu \\xe0 Saint-Maurice-sur-Moselle\'}, {\'created_on\': datetime.datetime(2015, 10, 16, 15, 58, 44, 62000), \'description\': u"Son agresseur se serait jet\\xe9 sur lui, au pi...rt\\xe9 six coups de couteau \\xe0 l\\u2019abdomen.", \'link\': u\'http://www.vosgesmatin.fr/faits-divers/2015/10...ns-poignarde-en-pleine-rue-en-meurthe-et-moselle\', \'title\': u\'Un petit gar\\xe7on de 7 ans poignard\\xe9 en pleine rue en Meurthe-et-Moselle\'}, {\'created_on\': datetime.datetime(2015, 10, 16, 15, 58, 44, 62000), \'description\': u\'Jacques Bellini, le premier adjoint de Rupt-su...er a d\\xe9couvert en lisi\\xe8re de for\\xeat, ...\', \'link\': u\'http://www.vosgesmatin.fr/edition-de-remiremon...de-moutons-jetees-dans-la-nature-dans-les-vosges\', \'title\': u\'Huit carcasses de moutons jet\\xe9es dans la nature dans les Vosges\'}], \'link\': u\'http://www.vosgesmatin.fr/\', \'title\': u\'A la Une | Actualit\\xe9 | Vosges Matin\'}'
+p157
+sS'feedparser'
+p158
+S"<module 'gluon.contrib.feedparser' from 'C:\\User...hias\\Desktop\\web2py\\gluon\\contrib\\feedparser.py'>"
+p159
+sS'SQLField'
+p160
+S"<class 'pydal.objects.Field'>"
+p161
+sS'mail'
+p162
+S'<gluon.tools.Mail object>'
+p163
+sS'BODY'
+p164
+S"<class 'gluon.html.BODY'>"
+p165
+sS'IS_DATE_IN_RANGE'
+p166
+S"<class 'gluon.validators.IS_DATE_IN_RANGE'>"
+p167
+sS'IFRAME'
+p168
+S"<class 'gluon.html.IFRAME'>"
+p169
+sS'URL'
+p170
+S'<function URL>'
+p171
+sS'__file__'
+p172
+S"r'C:\\Users\\Matthias\\Desktop\\web2py\\applications\\M2L\\views\\default/espacePresse.html'"
+p173
+sS'db'
+p174
+S'<DAL uri="mysql:******@172.17.28.250/M2L_G2">'
+p175
+sS'auth'
+p176
+S'<gluon.tools.Auth object>'
+p177
+sS'P'
+S"<class 'gluon.html.P'>"
+p178
+sS'TFOOT'
+p179
+S"<class 'gluon.html.TFOOT'>"
+p180
+sS'XHTML'
+p181
+S"<class 'gluon.html.XHTML'>"
+p182
+sS'ON'
+p183
+S'True'
+p184
+sS'OL'
+p185
+S"<class 'gluon.html.OL'>"
+p186
+sS'TEXTAREA'
+p187
+S"<class 'gluon.html.TEXTAREA'>"
+p188
+sS'MENU'
+p189
+S"<class 'gluon.html.MENU'>"
+p190
+sS'IS_IMAGE'
+p191
+S"<class 'gluon.validators.IS_IMAGE'>"
+p192
+sS'EM'
+p193
+S"<class 'gluon.html.EM'>"
+p194
+sS'CODE'
+p195
+S"<class 'gluon.html.CODE'>"
+p196
+sS'HTTP'
+p197
+S"<class 'gluon.http.HTTP'>"
+p198
+sS'HR'
+p199
+S"<class 'gluon.html.HR'>"
+p200
+sS'IS_DATETIME'
+p201
+S"<class 'gluon.validators.IS_DATETIME'>"
+p202
+sS'STYLE'
+p203
+S"<class 'gluon.html.STYLE'>"
+p204
+sS'LABEL'
+p205
+S"<class 'gluon.html.LABEL'>"
+p206
+sS'CLEANUP'
+p207
+S"<class 'gluon.validators.CLEANUP'>"
+p208
+sS'plugins'
+p209
+S'<gluon.tools.PluginManager object>'
+p210
+sS'SELECT'
+p211
+S"<class 'gluon.html.SELECT'>"
+p212
+sS'CENTER'
+p213
+S"<class 'gluon.html.CENTER'>"
+p214
+sS'Auth'
+p215
+S"<class 'gluon.tools.Auth'>"
+p216
+sS'DEVELOPMENT_MENU'
+p217
+g147
+sS'__builtins__'
+p218
+S"{'ArithmeticError': <type 'exceptions.ArithmeticError'>, 'AssertionError': <type 'exceptions.AssertionError'>, 'AttributeError': <type 'exceptions.AttributeError'>, 'BaseException': <type 'exceptions.BaseException'>, 'BufferError': <type 'exceptions.BufferError'>, 'BytesWarning': <type 'exceptions.BytesWarning'>, 'DeprecationWarning': <type 'exceptions.DeprecationWarning'>, 'EOFError': <type 'exceptions.EOFError'>, 'Ellipsis': Ellipsis, 'EnvironmentError': <type 'exceptions.EnvironmentError'>, ...}"
+p219
+sS'HTML'
+p220
+S"<class 'gluon.html.HTML'>"
+p221
+sS'SQLFORM'
+p222
+S"<class 'gluon.sqlhtml.SQLFORM'>"
+p223
+sS'LOAD'
+p224
+S'<function LOAD>'
+p225
+sS'redirect'
+p226
+S'<function redirect>'
+p227
+sS'FIELDSET'
+p228
+S"<class 'gluon.html.FIELDSET'>"
+p229
+sS'IS_EQUAL_TO'
+p230
+S"<class 'gluon.validators.IS_EQUAL_TO'>"
+p231
+sS'embed64'
+p232
+S'<function embed64>'
+p233
+sS'IS_LIST_OF'
+p234
+S"<class 'gluon.validators.IS_LIST_OF'>"
+p235
+sS'INPUT'
+p236
+S"<class 'gluon.html.INPUT'>"
+p237
+sS'EMBED'
+p238
+S"<class 'gluon.html.EMBED'>"
+p239
+sS'_'
+S'<function _>'
+p240
+sS'myconf'
+p241
+S"{'forms': {'formstyle': 'bootstrap3_inline', 'se...'you@gmail.com', 'server': 'smtp.gmail.com:587'}}"
+p242
+sS'H2'
+p243
+S"<class 'gluon.html.H2'>"
+p244
+sS'H3'
+p245
+S"<class 'gluon.html.H3'>"
+p246
+sS'AppConfig'
+p247
+S'<function AppConfig>'
+p248
+sS'H1'
+p249
+S"<class 'gluon.html.H1'>"
+p250
+sS'H6'
+p251
+S"<class 'gluon.html.H6'>"
+p252
+sS'H4'
+p253
+S"<class 'gluon.html.H4'>"
+p254
+sS'H5'
+p255
+S"<class 'gluon.html.H5'>"
+p256
+sS'UL'
+p257
+S"<class 'gluon.html.UL'>"
+p258
+sS'IS_UPPER'
+p259
+S"<class 'gluon.validators.IS_UPPER'>"
+p260
+sS'xmlescape'
+p261
+S'<function xmlescape>'
+p262
+sS'IS_TIME'
+p263
+S"<class 'gluon.validators.IS_TIME'>"
+p264
+sS'OPTION'
+p265
+S"<class 'gluon.html.OPTION'>"
+p266
+sS'TITLE'
+p267
+S"<class 'gluon.html.TITLE'>"
+p268
+sS'CRYPT'
+p269
+S"<class 'gluon.validators.CRYPT'>"
+p270
+sS'IS_EMPTY_OR'
+p271
+S"<class 'gluon.validators.IS_EMPTY_OR'>"
+p272
+sS'MARKMIN'
+p273
+S"<class 'gluon.html.MARKMIN'>"
+p274
+sS'__name__'
+p275
+S"'__restricted__'"
+p276
+sS'STRONG'
+p277
+S"<class 'gluon.html.STRONG'>"
+p278
+sS'COL'
+p279
+S"<class 'gluon.html.COL'>"
+p280
+sS'mc1'
+p281
+S"'col-md-9'"
+p282
+sS'mc0'
+p283
+S"'col-md-12'"
+p284
+sS'service'
+p285
+S'<gluon.tools.Service object>'
+p286
+sS'SCRIPT'
+p287
+S"<class 'gluon.html.SCRIPT'>"
+p288
+sS'TAG'
+p289
+S'<gluon.html.__TAG__ object>'
+p290
+sS'TABLE'
+p291
+S"<class 'gluon.html.TABLE'>"
+p292
+sS'IS_IPV4'
+p293
+S"<class 'gluon.validators.IS_IPV4'>"
+p294
+sS'IS_LENGTH'
+p295
+S"<class 'gluon.validators.IS_LENGTH'>"
+p296
+sS'IS_IPV6'
+p297
+S"<class 'gluon.validators.IS_IPV6'>"
+p298
+sS'XML'
+p299
+S"<class 'gluon.html.XML'>"
+p300
+sS'B'
+S"<class 'gluon.html.B'>"
+p301
+sS'IMG'
+p302
+S"<class 'gluon.html.IMG'>"
+p303
+sS'SQLTABLE'
+p304
+S"<class 'gluon.sqlhtml.SQLTABLE'>"
+p305
+sS'IS_MATCH'
+p306
+S"<class 'gluon.validators.IS_MATCH'>"
+p307
+sS'IS_ALPHANUMERIC'
+p308
+S"<class 'gluon.validators.IS_ALPHANUMERIC'>"
+p309
+sS'SPAN'
+p310
+S"<class 'gluon.html.SPAN'>"
+p311
+sS'IS_JSON'
+p312
+S"<class 'gluon.validators.IS_JSON'>"
+p313
+sS'IS_IPADDRESS'
+p314
+S"<class 'gluon.validators.IS_IPADDRESS'>"
+p315
+sS'IS_SLUG'
+p316
+S"<class 'gluon.validators.IS_SLUG'>"
+p317
+sS'BEAUTIFY'
+p318
+S"<class 'gluon.html.BEAUTIFY'>"
+p319
+sS'META'
+p320
+S"<class 'gluon.html.META'>"
+p321
+sS'BUTTON'
+p322
+S"<class 'gluon.html.BUTTON'>"
+p323
+sS'IS_DATE'
+p324
+S"<class 'gluon.validators.IS_DATE'>"
+p325
+sS'IS_EMAIL'
+p326
+S"<class 'gluon.validators.IS_EMAIL'>"
+p327
+sS'middle_column'
+p328
+S"'col-md-12'"
+p329
+sS'IS_NOT_EMPTY'
+p330
+S"<class 'gluon.validators.IS_NOT_EMPTY'>"
+p331
+sS'IS_FLOAT_IN_RANGE'
+p332
+S"<class 'gluon.validators.IS_FLOAT_IN_RANGE'>"
+p333
+sS'TBODY'
+p334
+S"<class 'gluon.html.TBODY'>"
+p335
+sS'CAT'
+p336
+S"<class 'gluon.html.CAT'>"
+p337
+sS'Field'
+p338
+S"<class 'pydal.objects.Field'>"
+p339
+sS'mc2'
+p340
+S"'col-md-6'"
+p341
+sS'IS_LIST_OF_EMAILS'
+p342
+S"<class 'gluon.validators.IS_LIST_OF_EMAILS'>"
+p343
+sS'DIV'
+p344
+S"<class 'gluon.html.DIV'>"
+p345
+sS'LEGEND'
+p346
+S"<class 'gluon.html.LEGEND'>"
+p347
+sS'COLGROUP'
+p348
+S"<class 'gluon.html.COLGROUP'>"
+p349
+sS'DAL'
+p350
+S"<class 'pydal.base.DAL'>"
+p351
+sS'ASSIGNJS'
+p352
+S'<function ASSIGNJS>'
+p353
+sS'TR'
+p354
+S"<class 'gluon.html.TR'>"
+p355
+sS'LI'
+p356
+S"<class 'gluon.html.LI'>"
+p357
+sS'right_sidebar_enabled'
+p358
+g147
+sS'TH'
+p359
+S"<class 'gluon.html.TH'>"
+p360
+sS'TD'
+p361
+S"<class 'gluon.html.TD'>"
+p362
+sS'PluginManager'
+p363
+S"<class 'gluon.tools.PluginManager'>"
+p364
+sS'IS_URL'
+p365
+S"<class 'gluon.validators.IS_URL'>"
+p366
+sS'A'
+S"<class 'gluon.html.A'>"
+p367
+sS'HEAD'
+p368
+S"<class 'gluon.html.HEAD'>"
+p369
+sS'IS_DATETIME_IN_RANGE'
+p370
+S"<class 'gluon.validators.IS_DATETIME_IN_RANGE'>"
+p371
+sS'FORM'
+p372
+S"<class 'gluon.html.FORM'>"
+p373
+sS'I'
+S"<class 'gluon.html.I'>"
+p374
+sS'IS_NOT_IN_DB'
+p375
+S"<class 'gluon.validators.IS_NOT_IN_DB'>"
+p376
+sg121
+S"<Storage {'body': <cStringIO.StringO object at 0...x03B68D70>, 'view': 'default/espacePresse.html'}>"
+p377
+sS'THEAD'
+p378
+S"<class 'gluon.html.THEAD'>"
+p379
+sS'ANY_OF'
+p380
+S"<class 'gluon.validators.ANY_OF'>"
+p381
+sS'IS_NULL_OR'
+p382
+S"<class 'gluon.validators.IS_EMPTY_OR'>"
+p383
+sg56
+S"<Storage {'_vars': None, 'function': 'espacePres...Matthias\\\\Desktop\\\\web2py\\\\applications\\\\M2L\\\\'}>"
+p384
+sS'IS_EXPR'
+p385
+S"<class 'gluon.validators.IS_EXPR'>"
+p386
+sS'T'
+S'<gluon.languages.translator object>'
+p387
+sS'IS_IN_SET'
+p388
+S"<class 'gluon.validators.IS_IN_SET'>"
+p389
+sS'IS_UPLOAD_FILENAME'
+p390
+S"<class 'gluon.validators.IS_UPLOAD_FILENAME'>"
+p391
+sS'TT'
+p392
+S"<class 'gluon.html.TT'>"
+p393
+sS'IS_DECIMAL_IN_RANGE'
+p394
+S"<class 'gluon.validators.IS_DECIMAL_IN_RANGE'>"
+p395
+sssS'traceback'
+p396
+S'Traceback (most recent call last):\n  File "C:\\Users\\Matthias\\Desktop\\web2py\\gluon\\restricted.py", line 227, in restricted\n    exec ccode in environment\n  File "C:\\Users\\Matthias\\Desktop\\web2py\\applications\\M2L\\views\\default/espacePresse.html", line 85, in <module>\nAttributeError: \'dict\' object has no attribute \'entries\'\n'
+p397
+s.
