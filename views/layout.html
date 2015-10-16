@@ -72,7 +72,15 @@
     </nav>
     <!-- Masthead ===================================== -->    
     {{block header}}
-    {{end}}
+    <header class="container-fluid background">
+      <div class="jumbotron text-center">
+        {{if response.title:}}
+        <h1>{{=response.title}}
+          <small>{{=response.subtitle or ''}}</small></h1>
+        {{pass}}
+      </div>
+    </header>
+{{end}}
     <!-- Main ========================================= -->
     <!-- Begin page content -->
     <div class="container-fluid main-container">

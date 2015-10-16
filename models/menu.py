@@ -5,17 +5,16 @@
 ## Customize your APP title, subtitle and menus here
 #########################################################################
 
-response.logo = A(B('web',SPAN(2),'py'),XML('&trade;&nbsp;'),
-                  _class="navbar-brand",_href="http://www.web2py.com/",
-                  _id="web2py-logo")
+response.logo = "M2L"
+
 response.title = request.application.replace('_',' ').title()
-response.subtitle = ''
+response.subtitle = 'Maison des Ligues de Lorraine'
 
 ## read more at http://dev.w3.org/html5/markup/meta.name.html
-response.meta.author = 'Your Name <you@example.com>'
-response.meta.description = 'a cool new app'
-response.meta.keywords = 'web2py, python, framework'
-response.meta.generator = 'Web2py Web Framework'
+response.meta.author = 'Maelle Taurand'
+response.meta.description = 'Portail de la maison des Ligues de Lorraine'
+response.meta.keywords = 'Ligues, Lorraine, Sport'
+response.meta.generator = 'Portail de la maison des Ligues de Lorraine'
 
 ## your http://google.com/analytics id
 response.google_analytics_id = None
@@ -24,11 +23,14 @@ response.google_analytics_id = None
 ## this is the main application menu add/remove items as required
 #########################################################################
 
-response.menu = [
-    (T('Home'), False, URL('default', 'index'), [])
-]
+response.menu = [ (T('Home'), False, URL('default', 'index'), [])]
+response.menu += [ (T('Nos ligues'), False, URL('default', 'index'), [])]
+response.menu += [ (T('Actualités sportives de la presse'), False, URL('default', 'index'), [])]
+response.menu += [ (T('Offre d\'emploi'), False, URL('default', 'index'), [])]
+response.menu += [ (T('Intranet'), False, URL('default', 'index'), [])]
 
-DEVELOPMENT_MENU = True
+
+DEVELOPMENT_MENU = False
 
 #########################################################################
 ## provide shortcuts for development. remove in production
@@ -135,4 +137,4 @@ def _():
         ]
 if DEVELOPMENT_MENU: _()
 
-if "auth" in locals(): auth.wikimenu() 
+if "auth" in locals(): auth.wikimenu()
