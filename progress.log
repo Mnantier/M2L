@@ -81,3 +81,16 @@
 [2015-10-16 16:02:13] EDIT M2L/views/default/pageContact.html: 0
 [2015-10-16 16:02:42] EDIT M2L/views/default/pageContact.html: 0
 [2015-10-16 16:04:38] EDIT M2L/views/default/pageContact.html: 0
+[2015-10-16 16:08:58] EDIT M2L/views/default/index.html: 0
+[2015-10-16 16:09:17] CREATE default/pagePersonnel.html: 0
+[2015-10-16 16:09:30] EDIT M2L/views/default/pageContact.html: -20
+[2015-10-16 16:09:41] EDIT M2L/views/default/pagePersonnel.html: 18
+[2015-10-16 16:10:10] EDIT M2L/controllers/default.py: 0
+[2015-10-16 16:11:08] EDIT M2L/views/default/pageContact.html: 0
+[2015-10-16 16:11:12] EDIT M2L/controllers/default.py: 0
+[2015-10-16 16:11:44] DELETE M2L/views/default/pageContact.html.1: -21
+[2015-10-16 16:12:28] EDIT M2L/views/default/pagePersonnel.html: 0
+[2015-10-16 16:13:18] EDIT M2L/controllers/default.py: 3
+[2015-10-16 16:15:02] EDIT M2L/views/default/pagePersonnel.html: 0
+[2015-10-16 16:38:08] EDIT M2L/controllers/default.py: -1
+[2015-10-16 16:42:03] EDIT M2L/views/default/pageContact.html: 24

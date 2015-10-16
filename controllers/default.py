@@ -15,8 +15,10 @@ def index():
     message = "Bienvenue sur le portail de la Maison des Ligues !"
     return locals()
 
+def pagePersonnel():
+    rowsPersonnel=db().select(db.personnel.ALL,distinct=True)
+    return locals()
 def pageContact():
-    rowsContact=db().select(db.personnel.ALL,distinct=True)
     return locals()
 
 def statutJuridique():
