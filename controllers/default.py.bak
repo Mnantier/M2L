@@ -22,10 +22,6 @@ def statutJuridique():
     """
     return locals()
 
-def lesLigues():
-    rowsLigue = db().select(db.ligue.ALL);
-    return locals()
-
 def user():
     """
     exposes:

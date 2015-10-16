@@ -1,0 +1,26 @@
+{{extend 'layout.html'}}
+<h2>
+    Nos ligues
+</h2>
+<table class='table'>
+    <tr>
+        <td><h4>Nom</h4></td>
+        <td><h4>Adresse</h4></td>
+        <td><h4>Ville</h4></td>
+        <td><h4>Code Postal</h4></td>
+        <td><h4>Téléphone</h4></td>
+        <td><h4>Site Web</h4></td>
+        <td><h4>Email</h4></td>
+    </tr>
+{{for uneLigue in rowsLigue:}}
+    <tr>
+        <td> {{=uneLigue.nom}} </td>
+        <td> {{=uneLigue.adresseRue}}</td>
+        <td> {{=uneLigue.ville}}</td>
+        <td> {{=uneLigue.cp}}</td>
+        <td> {{=uneLigue.tel}}</td>
+        <td> {{=uneLigue.URLSiteWeb}}</td>
+        <td> {{=uneLigue.emailContact}}</td>
+    </tr>
+{{pass}}
+</table>
