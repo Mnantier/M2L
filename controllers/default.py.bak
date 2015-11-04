@@ -12,7 +12,7 @@ def index():
     """
     Page d'accueil
     """
-    message = "Bienvenue sur le portail de la Maison des Ligues !"
+    message = "Bienvenue sur le a Maison des Ligues !"
     return locals()
 
 
@@ -33,6 +33,11 @@ def nosLocaux():
     Page de structuration des locaux
     """
     return locals()
+def parcInformatique():
+    """
+    Page  du parc informatique
+    """
+    return locals() 
 
 def user():
     """
