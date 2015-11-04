@@ -40,7 +40,9 @@ def espacePresse():
     import gluon.contrib.feedparser as feedparser
     rssVosges = aggregatorVosges()
     return locals()
-
+def showArticle():
+    a = request.args(0)
+    return locals()
 def user():
     """
     exposes:

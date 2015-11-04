@@ -298,3 +298,13 @@ CREATE TABLE auth_user(
     registration_id VARCHAR(512),
     PRIMARY KEY (id)
 ) ENGINE=InnoDB CHARACTER SET utf8;
+timestamp: 2015-10-16T14:35:54.041000
+CREATE TABLE rss_entry(
+    id INT AUTO_INCREMENT NOT NULL,
+    title VARCHAR(512),
+    link VARCHAR(512),
+    created_on DATETIME,
+    description VARCHAR(512),
+    PRIMARY KEY (id)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
