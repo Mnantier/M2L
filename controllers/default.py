@@ -27,7 +27,17 @@ def servicePropose():
     Page des services
     """
     return locals()
-    
+
+def nosLocaux():
+    """
+    Page de structuration des locaux
+    """
+    return locals()
+def parcInformatique():
+    """
+    Page  du parc informatique
+    """
+    return locals() 
 
 def user():
     """
