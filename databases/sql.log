@@ -298,3 +298,33 @@ CREATE TABLE auth_user(
     registration_id VARCHAR(512),
     PRIMARY KEY (id)
 ) ENGINE=InnoDB CHARACTER SET utf8;
+timestamp: 2015-11-04T15:39:40.876000
+CREATE TABLE ligue(
+    id INT AUTO_INCREMENT NOT NULL,
+    nom VARCHAR(512),
+    adresseRue VARCHAR(512),
+    ville VARCHAR(512),
+    cp VARCHAR(512),
+    tel VARCHAR(512),
+    URLSiteWeb VARCHAR(512),
+    emailContact VARCHAR(512),
+    nbrLicencies INT,
+    PRIMARY KEY (id)
+) ENGINE=InnoDB CHARACTER SET utf8;
+timestamp: 2015-11-04T15:48:18.470000
+CREATE TABLE ligue(
+    id INT AUTO_INCREMENT NOT NULL,
+    nom VARCHAR(512),
+    adresseRue VARCHAR(512),
+    ville VARCHAR(512),
+    cp VARCHAR(512),
+    tel VARCHAR(512),
+    URLSiteWeb VARCHAR(512),
+    emailContact VARCHAR(512),
+    PRIMARY KEY (id)
+) ENGINE=InnoDB CHARACTER SET utf8;
+faked!
+timestamp: 2015-11-04T15:48:45.936000
+ALTER TABLE ligue ADD nbrlicencies INT;
+success!
+success!

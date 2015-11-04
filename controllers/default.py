@@ -23,7 +23,15 @@ def statutJuridique():
     return locals()
 
 def lesLigues():
-    rowsLigue = db().select(db.ligue.ALL);
+    rowsLigue = db().select(db.ligue.ALL)
+    nbrTotal = 0
+    stats = []
+    for unNbr in rowsLigue :
+        nbrTotal += unNbr.nbrLicencies
+
+    for unNbr in rowsLigue :
+        x = round(float(unNbr.nbrLicencies)/nbrTotal * 100,1)
+        stats.append(x)
     return locals()
 
 def user():

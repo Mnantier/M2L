@@ -11,9 +11,12 @@
         <td><h4>Téléphone</h4></td>
         <td><h4>Site Web</h4></td>
         <td><h4>Email</h4></td>
+        <td><h4>Statistique</h4></td>
     </tr>
+    {{i=0}}
 {{for uneLigue in rowsLigue:}}
     <tr>
+
         <td> {{=uneLigue.nom}} </td>
         <td> {{=uneLigue.adresseRue}}</td>
         <td> {{=uneLigue.ville}}</td>
@@ -21,6 +24,10 @@
         <td> {{=uneLigue.tel}}</td>
         <td> {{=uneLigue.URLSiteWeb}}</td>
         <td> {{=uneLigue.emailContact}}</td>
+        <td> {{=stats[i]}}</td>
+        {{i++}
     </tr>
 {{pass}}
+    </br>
+
 </table>
