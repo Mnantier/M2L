@@ -22,6 +22,7 @@ def statutJuridique():
     """
     return locals()
 
+
 def aggregatorVosges():
     import gluon.contrib.feedparser as feedparser
     d = feedparser.parse(
@@ -39,6 +40,24 @@ def aggregatorVosges():
 def espacePresse():
     import gluon.contrib.feedparser as feedparser
     rssVosges = aggregatorVosges()
+    return locals()
+
+def servicePropose():
+    """
+    Page des services
+    """
+    return locals()
+
+def nosLocaux():
+    """
+    Page de structuration des locaux
+    """
+    return locals()
+
+def parcInformatique():
+    """
+    Page  du parc informatique
+    """
     return locals()
 
 def user():
