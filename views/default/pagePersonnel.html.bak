@@ -9,13 +9,13 @@
     <td>  <b>Adresse </b> </td>
     <td>  <b>Téléphone </b> </td>
     <td>  <b>E-mail </b> </td>
-{{for unContact in rowsPersonnel:}}
-    <tr><td>   {{=unContact.nom}} &nbsp;</td>
-          <td> {{=unContact.prenom}} &nbsp;</td>
-          <td> {{=unContact.mission}} &nbsp;</td>
-          <td> {{=unContact.adresseRue}} &nbsp;</td>
-          <td> {{=unContact.tel}} &nbsp;</td>
-          <td> {{=unContact.emailContact}} &nbsp;</td>
+{{for unPersonnel in rowsPersonnel:}}
+    <tr><td>   {{=unPersonnel.nom}} &nbsp;</td>
+          <td> {{=unPersonnel.prenom}} &nbsp;</td>
+          <td> {{=unPersonnel.mission}} &nbsp;</td>
+          <td> {{=unPersonnel.adresseRue}} &nbsp;</td>
+          <td> {{=unPersonnel.tel}} &nbsp;</td>
+          <td> {{=unPersonnel.emailContact}} &nbsp;</td>
         </td></tr>
 {{pass}}
 </table>

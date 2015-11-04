@@ -1,0 +1,19 @@
+{{extend 'layout.html'}}
+<h1>
+    Page des Participants
+</h1>
+<table class='table'>
+<tr><td> <b>Nom</b> </td>
+    <td>  <b>Prénom</b>  </td>
+    <td>  <b>Grade </b> </td>
+    <td>  <b>Téléphone</b> </td>
+    <td>  <b>E-mail </b> </td>
+{{for unParticipant in rowsParticipant:}}
+    <tr><td>   {{=unParticipant.nom}} &nbsp;</td>
+          <td> {{=unParticipant.prenom}} &nbsp;</td>
+          <td> {{=unParticipant.adresseRue}} &nbsp;</td>
+          <td> {{=unParticipant.tel}} &nbsp;</td>
+          <td> {{=unParticipant.emailContact}} &nbsp;</td>
+        </td></tr>
+{{pass}}
+</table>

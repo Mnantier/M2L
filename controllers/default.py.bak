@@ -18,8 +18,9 @@ def index():
 def pagePersonnel():
     rowsPersonnel=db().select(db.personnel.ALL,distinct=True)
     return locals()
+
 def pageContact():
-    rowsContact=db().select(db.personnel.ALL,distinct=True)
+    rowsContact=db().select(db.Contact.ALL,distinct=True)
     return locals()
 
 def statutJuridique():

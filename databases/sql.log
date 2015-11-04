@@ -310,3 +310,26 @@ CREATE TABLE personnel(
     PRIMARY KEY (id)
 ) ENGINE=InnoDB CHARACTER SET utf8;
 success!
+timestamp: 2015-11-04T14:21:07.512000
+CREATE TABLE Contact(
+    id INT AUTO_INCREMENT NOT NULL,
+    nom VARCHAR(512),
+    prenom VARCHAR(512),
+    grade VARCHAR(512),
+    tel VARCHAR(512),
+    Fax VARCHAR(512),
+    emailContact VARCHAR(512),
+    PRIMARY KEY (id)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2015-11-04T15:36:12.065000
+CREATE TABLE participant(
+    id INT AUTO_INCREMENT NOT NULL,
+    nom VARCHAR(512),
+    prenom VARCHAR(512),
+    adresseRue VARCHAR(512),
+    tel VARCHAR(512),
+    emailContact VARCHAR(512),
+    PRIMARY KEY (id)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!

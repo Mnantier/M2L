@@ -15,4 +15,12 @@ db.define_table('personnel',
                 Field('mission','string',requires=IS_NOT_EMPTY()),
                 Field('adresseRue','string',requires=IS_NOT_EMPTY()),
                 Field('tel','string',requires=IS_NOT_EMPTY()),
-                Field('emailContact','string')
+                Field('emailContact','string'))
+
+db.define_table('Contact',
+                Field('nom','string',requires=IS_NOT_EMPTY()),
+                Field('prenom','string',requires=IS_NOT_EMPTY()),
+                Field('grade','string',requires=IS_NOT_EMPTY()),
+                Field('tel','string',requires=IS_NOT_EMPTY()),
+                Field('Fax','string'),
+                Field('emailContact','string'))

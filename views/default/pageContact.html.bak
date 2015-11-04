@@ -1,1 +1,41 @@
 {{extend 'layout.html'}}
+<h1>
+    Page de Contact
+</h1>
+<div id = "Coordonnee_contact">
+<p>
+COORDONNEES MAISON DES LIGUES DE LORRAINE
+</p>
+<p>
+13 rue Jean Moulin - BP 70001
+</p>
+<p>
+54510 TOMBLAINE
+</p>
+<p>
+Tél. : 03.83.18.87.02
+</p>
+<p>
+Fax : 03.83.18.87.03
+</p>
+<p>
+Email : contact@m2l.fr
+</p>
+</div>
+<br>
+<table class='table'>
+<tr><td> <b>Nom</b> </td>
+    <td>  <b>Prénom</b>  </td>
+    <td>  <b>Grade </b> </td>
+    <td>  <b>Téléphone</b> </td>
+    <td>  <b>Fax </b> </td>
+    <td>  <b>E-mail </b> </td>
+{{for unContact in rowsContact:}}
+    <tr><td>   {{=unContact.nom}} &nbsp;</td>
+          <td> {{=unContact.prenom}} &nbsp;</td>
+          <td> {{=unContact.grade}} &nbsp;</td>
+          <td> {{=unContact.tel}} &nbsp;</td>
+          <td> {{=unContact.emailContact}} &nbsp;</td>
+        </td></tr>
+{{pass}}
+</table>
