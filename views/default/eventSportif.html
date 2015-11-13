@@ -1,0 +1,23 @@
+{{extend 'layout.html'}}
+
+<h1>
+    Liste des évènements sportifs des ligues de Loraine
+</h1>
+<table class="table">
+    <tr>
+        <td> <strong>Sport/Club</strong> </td>
+        <td> <strong>Évènement</strong> </td>
+        <td> <strong>Date de début</strong></td>
+
+    </tr>
+   {{for event in  rowsEvents:}}
+    <tr>
+        <td>{{=event.NOM_EVT}}</td>
+        <td>{{=event.REMARQUES}}</td>
+        <td>{{=event.DATE_DEBUT}}</td>
+        {{if event.SITE_INTERNET != "":}}
+        <td><a href="{{=event.SITE_INTERNET}}"> Site</a></td>
+        {{pass}}
+    </tr>
+    {{pass}}
+</table>
