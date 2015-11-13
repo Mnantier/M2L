@@ -79,6 +79,10 @@ def lesLigues():
         stats.append(x)
     return locals()
 
+def eventSportif():
+    rowsEvents = db().select(db.sportEvent.ALL, orderby="sportEvent.DATE_DEBUT ASC")
+    return locals()
+
 def user():
     """
     exposes:
