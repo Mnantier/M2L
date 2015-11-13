@@ -26,6 +26,7 @@ def lesLigues():
     rowsLigue = db().select(db.ligue.ALL)
     nbrTotal = 0
     stats = []
+    i=0
     for unNbr in rowsLigue :
         nbrTotal += unNbr.nbrLicencies
 

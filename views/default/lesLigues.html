@@ -13,7 +13,6 @@
         <td><h4>Email</h4></td>
         <td><h4>Statistique</h4></td>
     </tr>
-    {{i=0}}
 {{for uneLigue in rowsLigue:}}
     <tr>
 
@@ -24,8 +23,8 @@
         <td> {{=uneLigue.tel}}</td>
         <td> {{=uneLigue.URLSiteWeb}}</td>
         <td> {{=uneLigue.emailContact}}</td>
-        <td> {{=stats[i]}}</td>
-        {{i++}
+        <td> {{=stats[i]}}%</td>
+        {{i=i+1}}
     </tr>
 {{pass}}
     </br>
