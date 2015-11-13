@@ -1,0 +1,23 @@
+{{extend 'layout.html'}}
+<h1>
+    Recherche du participant :
+</h1>
+<br>
+<table class='table'>
+<tr>
+    <td><b>Nom </b></td>
+    <td><b>Prenom </b></td>
+    <td><b>Adresse</b></td>
+    <td><b>Telephone </b></td>
+    <td><b>E-mail</b> </td>
+</tr>
+    {{for unRowParticipant in rowParticipant:}}
+<tr>
+    <td>{{=unRowParticipant.nom}} </td>
+    <td>{{=unRowParticipant.prenom}} </td>
+    <td>{{=unRowParticipant.adresseRue}}</td>
+    <td>{{=unRowParticipant.tel}} </td>
+    <td>{{=unRowParticipant.emailContact}} </td>
+</tr>
+    {{pass}}
+</table>
