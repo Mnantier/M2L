@@ -23,6 +23,10 @@ def pageParticipant():
     rowsParticipant=db().select(db.participant.ALL,distinct=True)
     return locals()
 
+def pageParticipant2():
+    rowParticipant=db(db.participant.nom==request.vars.nom).select(db.participant.ALL,distinct=True)
+    return locals()
+
 def pageContact():
     rowsContact=db().select(db.Contact.ALL,distinct=True)
     return locals()
