@@ -24,10 +24,12 @@ response.google_analytics_id = None
 #########################################################################
 
 response.menu = [ (T('Home'), False, URL('default', 'index'), [])]
+
 response.menu += [ (T('Nos ligues'), False, URL('default', 'lesLigues'), [])]
 response.menu += [ (T('Actualités sportives de la presse'), False, URL('default', 'espacePresse'), [])]
 response.menu += [ (T('Les Évènements Sportifs'), False, URL('default', 'eventSportif'), [])]
 response.menu += [ (T('Offre d\'emploi'), False, URL('default', 'index'), [])]
+response.menu += [ (T('Participants aux Jeux'), False, URL('default', 'pageParticipant'), [])]
 response.menu += [ (T('Intranet'), False, URL('default', 'index'), [])]
 
 
