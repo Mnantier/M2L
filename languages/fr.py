@@ -194,6 +194,7 @@
 'This is a copy of the scaffolding application': "Ceci est une copie de l'application échafaudage",
 'Time in Cache (h:m:s)': 'Temps en Cache (h:m:s)',
 'Timestamp': 'Horodatage',
+'Traceback': 'Traceback',
 'Twitter': 'Twitter',
 'unable to parse csv file': "incapable d'analyser le fichier cvs",
 'Update:': 'Mise à jour:',

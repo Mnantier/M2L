@@ -1,9 +1,0 @@
-{{extend 'layout.html'}}
-<table class="table">
-   {{for entry in  rssVosges['entries']:}}
-    <tr>
-        <td><a href="{{=URL(entry['link'])}}">{{=entry['title']}}</a></td>
-        <td>{{=entry['created_on']}}</td>
-    </tr>
-    {{pass}}
-</table>

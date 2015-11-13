@@ -6,5 +6,6 @@ db.define_table('ligue',
              Field('cp','string',requires=IS_NOT_EMPTY()),
              Field('tel','string',requires=IS_NOT_EMPTY()),
              Field('URLSiteWeb','string'),
-             Field('emailContact','string')  
-             ,migrate=False)
+             Field('emailContact','string'),
+             Field('nbrLicencies','integer'),
+             migrate=True,fake_migrate=True)

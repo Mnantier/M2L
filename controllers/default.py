@@ -22,6 +22,8 @@ def statutJuridique():
     """
     return locals()
 
+
+
 def aggregatorVosges():
     import gluon.contrib.feedparser as feedparser
     d = feedparser.parse(
@@ -39,6 +41,42 @@ def aggregatorVosges():
 def espacePresse():
     import gluon.contrib.feedparser as feedparser
     rssVosges = aggregatorVosges()
+    return locals()
+
+def servicePropose():
+    """
+    Page des services
+    """
+    return locals()
+
+def nosLocaux():
+    """
+    Page de structuration des locaux
+    """
+    return locals()
+
+def parcInformatique():
+    """
+    Page  du parc informatique
+    """
+    return locals()
+
+def lesLigues():
+    """
+    Page des ligues de M2L
+    """
+    rowsLigue = db().select(db.ligue.ALL)
+    nbrTotal = 0
+    stats = []
+    i=0
+    for unNbr in rowsLigue :
+        nbrTotal += unNbr.nbrLicencies
+
+    #Fonction pour les statistiques des licenciés
+    
+    for unNbr in rowsLigue :
+        x = round(float(unNbr.nbrLicencies)/nbrTotal * 100,1)
+        stats.append(x)
     return locals()
 
 def user():
