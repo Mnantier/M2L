@@ -1,0 +1,22 @@
+{{extend 'layout.html'}}
+<h1>
+    Page du Personnel
+</h1>
+<br>
+<table class='table'>
+<tr><td> <b>Nom</b> </td>
+    <td>  <b>Prénom</b>  </td>
+    <td>  <b>Mission </b> </td>
+    <td>  <b>Adresse </b> </td>
+    <td>  <b>Téléphone </b> </td>
+    <td>  <b>E-mail </b> </td>
+{{for unPersonnel in rowsPersonnel:}}
+    <tr><td>   {{=unPersonnel.nom}} &nbsp;</td>
+          <td> {{=unPersonnel.prenom}} &nbsp;</td>
+          <td> {{=unPersonnel.mission}} &nbsp;</td>
+          <td> {{=unPersonnel.adresseRue}} &nbsp;</td>
+          <td> {{=unPersonnel.tel}} &nbsp;</td>
+          <td> {{=unPersonnel.emailContact}} &nbsp;</td>
+        </td></tr>
+{{pass}}
+</table>

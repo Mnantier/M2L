@@ -8,4 +8,4 @@ db.define_table('ligue',
              Field('URLSiteWeb','string'),
              Field('emailContact','string'),
              Field('nbrLicencies','integer'),
-             migrate=True,fake_migrate=True)
+             migrate=False,fake_migrate=True)

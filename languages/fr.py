@@ -139,6 +139,7 @@
 'Other Recipes': 'Autres recettes',
 'Overview': 'Présentation',
 'Parc informatique': 'Parc informatique',
+'Participants aux Jeux': 'Participants aux Jeux',
 'Password': 'Mot de passe',
 "Password fields don't match": 'Les mots de passe ne correspondent pas',
 'Plugins': 'Plugins',
