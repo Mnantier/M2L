@@ -41,6 +41,9 @@ def espacePresse():
     rssVosges = aggregatorVosges()
     return locals()
 
+def eventSportif():
+    rowsEvents = db().select(db.sportEvent.ALL, orderby="sportEvent.DATE_DEBUT ASC")
+    return locals()
 def user():
     """
     exposes:
